@@ -6,6 +6,7 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 $routes = [
     '/' => 'controllers/index.php',
     '/about' => 'controllers/about.php',
+    '/notes' => 'controllers/notes.php',
     '/contact' => 'controllers/contact.php',
 ];
 
@@ -24,7 +25,7 @@ function abort($statusCode = 404)
 {
     http_response_code($statusCode);
 
-    require ("controllers/{$$statusCode}.php");
+    require ("controllers/{$statusCode}.php");
 
     die($statusCode);
 }
