@@ -1,15 +1,10 @@
 <?php
-
+// Define routes
+$routes = require('routes.php');
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
-// Define routes
-$routes = [
-    '/' => 'controllers/index.php',
-    '/about' => 'controllers/about.php',
-    '/notes' => 'controllers/notes.php',
-    '/note' => 'controllers/note.php',
-    '/contact' => 'controllers/contact.php',
-];
+
+
 
 // function that maps route to controller
 function routeToController($uri, $routes){
