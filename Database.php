@@ -25,7 +25,8 @@ class Database {
     public function get()
     {
        return $this->statement->fetchAll();
-    }  public function find()
+    }
+    public function find()
     {
        return $this->statement->fetch();
     }
