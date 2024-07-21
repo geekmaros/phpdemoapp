@@ -6,6 +6,10 @@
 <?php require('partials/banner.php') ?>
 <main>
     <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 flex items-center justify-start gap-x-6">
+            <a href="/" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Create Note 📝</a>
+        </div>
+
        <?php foreach ($notes as $note) : ?>
         <div class="bg-white overflow-hidden shadow rounded-lg">
             <div class="px-4 py-5 sm:px-6">
@@ -19,7 +23,9 @@
             </div>
         </div>
         <?php endforeach; ?>
+
     </div>
+
 </main>
 
 </body>
