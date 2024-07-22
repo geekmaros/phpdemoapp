@@ -13,11 +13,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error['body'] = "Body can't be empty";
         $error['title'] = "Add a Title to your note";
     }
-//
-//    if(strlen($_POST['body']) > 1000 && strlen($_POST['title']) > 500) {
-//        $error['body'] = "Body can't be more than 1000 words sorry";
-//        $error['title'] = "Title can't be more than 500 words sorry";
-//    }
 
 
     $body = htmlspecialchars($_POST['body']);
