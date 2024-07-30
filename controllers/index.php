@@ -1,3 +1,4 @@
 <?php
-$heading = "Dashboard";
-require "views/index.view.php";
+view("/index.view.php", [
+    'heading' => 'Home'
+]);
