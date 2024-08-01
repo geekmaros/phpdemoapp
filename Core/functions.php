@@ -24,7 +24,8 @@ function authorize ($condition, $statusCode = Response::FORBIDDEN)
 }
 
 
-function base_path($path){
+function base_path($path): string
+{
  return BASE_PATH . $path;
 }
 
