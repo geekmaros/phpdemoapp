@@ -16,6 +16,16 @@ function urlIs($value)
     return $_SERVER['REQUEST_URI'] === $value;
 }
 
+
+function abort($statusCode = 404)
+{
+    http_response_code($statusCode);
+
+    require base_path("controllers/{$statusCode}.php");
+
+    die($statusCode);
+}
+
 function authorize ($condition, $statusCode = Response::FORBIDDEN)
 {
     if(!$condition){
