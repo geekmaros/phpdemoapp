@@ -1,5 +1,4 @@
 <?php
-use Core\Router;
 const BASE_PATH = __DIR__ . "/../";
 
 // This Index is our entry file for our app
@@ -12,9 +11,8 @@ spl_autoload_register(function ($class) {
     require base_path("{$class}.php");
 });
 
-$router = '' ;
 
-$router = new Router();
+$router = new \Core\Router();
 
 $routes = require base_path('routes.php');
 
