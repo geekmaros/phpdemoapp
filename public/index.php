@@ -26,15 +26,3 @@ $method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
 $router->route($uri, $method);
 
 
-
-
-//$config = require('config.php');
-//$db = new Database($config['database']);
-//
-
-//$query = "SELECT * FROM posts WHERE id = :id ";
-//
-//$posts = $db->query($query, ['id' => $id])->fetchAll(PDO::FETCH_ASSOC);
-//
-
-
