@@ -3,8 +3,7 @@ const BASE_PATH = __DIR__ . "/../";
 
 // This Index is our entry file for our app
 require BASE_PATH . "Core/functions.php";
-//require base_path("Database.php");
-//require base_path("Response.php");
+
 spl_autoload_register(function ($class) {
 
    $class =  str_replace('\\', DIRECTORY_SEPARATOR, $class);
