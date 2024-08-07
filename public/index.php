@@ -17,7 +17,7 @@ $routes = require base_path('routes.php');
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
-//ternary operation below is used to check if the _method key is set in the post request
+
 
 $method = $_POST['_method'] ?? $_SERVER['REQUEST_METHOD'];
 
